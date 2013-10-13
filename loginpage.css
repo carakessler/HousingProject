@@ -6,24 +6,43 @@
  
  #login {
  	background-color: white;
- 	width: 400px;
- 	height: 300px;
+ 	width: 450px;
+ 	border-radius: 5px; 
+ 	height: 260px;
+ 	box-shadow: 2px 2px 5px rgb(0,22,50);
+
+ }
+ h1{
+ 	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: normal;
  }
  
  #loginbutton {
+ 	margin-top: 40px;
  	display: block;
 	width: 100px;
 	height: 40px;
+	border-radius: 8px;
 	text-align: center;
- 
- 
+	border: none;
+	box-shadow: 2px 2px 5px gray;
+	font-size: 21px;
+	background-color: rgb(0,55,96);
+	color: white;
+	 
  }
  
  #registerbutton {
  	display: block;
 	width: 100px;
 	height: 40px;
+	border-radius: 8px;
 	text-align: center;
- 
- 
+	border: none;
+	box-shadow: 2px 2px 5px gray;
+	font-size: 21px;
+	background-color: rgb(0,55,96);
+	color: white;
+	 
  }
