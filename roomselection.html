@@ -2,6 +2,32 @@
 <head>
 <title>Floor Plans</title>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+	function favBrowser()
+	{
+		var mylist=document.getElementById("myList");
+		document.getElementById("favorite").value=mylist.options[mylist.selectedIndex].text;
+	}
+	
+	function getfloors()
+	{
+	
+	}
+	
+	
+	$(function() {
+	
+		 $.getJSON('json/dorms.json', function(data) {
+		 	var listElement = "<li>" + data.locations[5].Southside.halls['Valentine'][1][110] + "sup</li>"
+		 	$(listElement).appendTo(".Rooms ul");
+		 });
+	});
+
+</script>
+
+
 <style type="text/css">
 body {
 	background-color: red;
@@ -36,7 +62,32 @@ body {
 <body>
 <div class="Navbar">Navbar goes here</div>
 <div class="Viewer">Floor plan picture viewer goes here</div>
-<div class="Floor">Floor drop down goes here</div>
-<div class="Rooms">Room selection list down goes here</div>
+
+
+<div class="Floor">Floor drop down goes here
+
+	<form>
+		Select your favorite browser:
+		<select id="myList" onchange="favBrowser()">
+ 	 		<option></option>
+  			<option>Google Chrome</option>
+  			<option>Firefox</option>  
+  			<option>Internet Explorer</option>
+  			<option>Safari</option>
+  			<option>Opera</option>
+		</select>
+		<p>Your favorite browser is: <input type="text" id="favorite" size="20"></p>
+	</form>
+
+
+</div>
+
+<div class="Rooms"> 
+	<ul>
+		
+	
+	</ul>
+</div>
+	
 </body>
 </html>

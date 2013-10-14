@@ -1,6 +1,5 @@
 {
-	"locations": {
-	
+	"locations": [{
 		"Fraternity Quad": {
 		
 				"halls": {
@@ -537,7 +536,9 @@
 				
 				
 							
+		}
 		},
+		{
 		"Hill Court" : {
 				"halls": {
 					
@@ -815,8 +816,9 @@
 							}
 						}
 				}
+		}
 		},
-		
+		{
 		"Jackson Court" : {
 			"halls": {
 					
@@ -1235,14 +1237,16 @@
 							}
 					}
 				}
+		}
 		},
-		
+		{		
 		"Res Quad" : {
 		
 		
 		
+		}
 		},
-		
+		{
 		"Riverview" : {
 			"halls": {
 					
@@ -1424,8 +1428,9 @@
 					}
 				}
 		
+		}
 		},
-		
+		{
 		"Southside" : {
 			"halls": {
 					
@@ -1739,4 +1744,5 @@
 		
 		
     }
+    	}]
 }
