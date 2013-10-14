@@ -4,176 +4,213 @@
                     "name": "Cara Kessler",
                     "id": "27567104",
                     "year": "Jr",
+                    "password": "cara"
                 },
                 {
                     "name": "Sam Johnson",
                     "id": "22567104",
                     "year": "Sr",
+                    "password": "sam"
+
                 },
                 {
                     "name": "John Smith",
                     "id": "25567104",
                     "year": "Sr",
+                    "password": "john"
+
                 },
                 {
                     "name": "Mary Jones",
                     "id": "24567104",
                     "year": "Jr",
+                    "password": "mary"
                 },
                 {
                     "name": "Keith Wilson",
                     "id": "27667104",
                     "year": "So",
+                    "password": "keith"
                 },
                 {
                     "name": "James Thompson",
                     "id": "27564104",
                     "year": "Sr",
+                    "password": "james"
                 },
                 {
                     "name": "Chris Garcia",
                     "id": "17567104",
                     "year": "So",
+                    "password": "chris"
                 },
                 {
                     "name": "Alex Allen",
                     "id": "47567104",
                     "year": "So",
+                    "password": "alex"
                 },
                 {
                     "name": "Adam Young",
                     "id": "37567104",
                     "year": "So",
+                    "password": "adam"
                 },
                 {
                     "name": "Matthew Hernandez",
                     "id": "97567104",
                     "year": "Jr",
+                    "password": "matthew"
                 },
                 {
                     "name": "Carly Martin",
                     "id": "84567104",
                     "year": "So",
+                    "password": "carly"
                 },
                 {
                     "name": "Polly Campbell",
                     "id": "25467104",
                     "year": "Jr",
+                    "password": "polly"
                 },
                 {
                     "name": "Emily Turner",
                     "id": "27504104",
                     "year": "So",
+                    "password": "emily"
                 },
                 {
                     "name": "Jacob Phillips",
                     "id": "27007104",
                     "year": "Jr",
+                    "password": "jacob"
                 },
                 {
                     "name": "Daniel Anderson",
                     "id": "27117104",
                     "year": "So",
+                    "password": "daniel"
                 },
                 {
                     "name": "Zoe Wilder",
                     "id": "27227104",
                     "year": "Sr",
+                    "password": "zoe"
                 },
                 {
                     "name": "Michael Collins",
                     "id": "27567104",
                     "year": "Jr",
-                }
+                    "password": "michael"
+                },
                 {
                     "name": "Phil Rabner",
                     "id": "27567111",
                     "year": "Jr",
+                    "password": "phil"
                 },
                 {
                     "name": "Abby Jacobson",
                     "id": "22567334",
                     "year": "Sr",
+                    "password": "abby"
                 },
                 {
                     "name": "Justin Ross",
                     "id": "33367104",
                     "year": "Sr",
+                    "password": "justin"
                 },
                 {
                     "name": "Jeremy Emerson",
                     "id": "24333104",
                     "year": "Jr",
+                    "password": "jeremy"
                 },
                 {
                     "name": "Sarah Jenkins",
                     "id": "27667334",
                     "year": "So",
+                    "password": "sarah"
                 },
                 {
                     "name": "Lindsey Howell",
                     "id": "27014104",
                     "year": "Sr",
+                    "password": "lindsey"
                 },
                 {
                     "name": "Molly Wood",
                     "id": "11467104",
                     "year": "So",
+                    "password": "molly"
                 },
                 {
                     "name": "Derrick Fisher",
                     "id": "47531104",
                     "year": "So",
+                    "password": "derrick"
                 },
                 {
                     "name": "Meredith Ortiz",
                     "id": "37567994",
                     "year": "So",
+                    "password": "meredith"
                 },
                 {
                     "name": "George Grant",
                     "id": "97020104",
                     "year": "Jr",
+                    "password": "george"
                 },
                 {
                     "name": "Pamela Knight",
                     "id": "84509004",
                     "year": "So",
+                    "password": "pamela"
                 },
                 {
                     "name": "Will Dunn",
                     "id": "25007104",
                     "year": "Jr",
+                    "password": "will"
                 },
                 {
                     "name": "Nikki Hawkins",
                     "id": "37504102",
                     "year": "So",
+                    "password": "nikki"
                 },
                 {
                     "name": "Amanda Wagner",
                     "id": "47027104",
                     "year": "Jr",
+                    "password": "amanda"  
                 },
                 {
                     "name": "Eric Arnold",
                     "id": "27878104",
                     "year": "So",
+                    "password": "eric"
                 },
                 {
                     "name": "Jordan Franklin",
                     "id": "29988104",
                     "year": "Sr",
+                    "password": "jordan"
                 },
                 {
                     "name": "Steven Burton",
                     "id": "29281104",
                     "year": "Jr",
-                }
+                    "password": "steven"
+                },
                 {
                     "name": "Gabrielle Brickman",
                     "id": "29777102",
                     "year": "Sr",
+                    "password": "gabrielle"
                 }
             ]
 }
