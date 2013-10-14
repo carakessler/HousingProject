@@ -5,24 +5,41 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
 <script>
-	function favBrowser()
-	{
-		var mylist=document.getElementById("myList");
-		document.getElementById("favorite").value=mylist.options[mylist.selectedIndex].text;
-	}
 	
-	function getfloors()
+	function updateRoom()
 	{
-	
+		var floorth = document.getElementById("myList").value;
+
+		$.getJSON('json/dorms.json', function(data) {
+			//var floorth = document.getElementById("myList");
+
+		 	$.each(data.locations[5].Southside.halls['Valentine'][floorth], function(i, f) {
+		 	var listElement = "<li>" + i + "</li>"
+		 	$(listElement).appendTo(".Rooms ul");
+			 });
+		});
 	}
 	
 	
 	$(function() {
 	
 		 $.getJSON('json/dorms.json', function(data) {
-		 	var listElement = "<li>" + data.locations[5].Southside.halls['Valentine'][1][110] + "sup</li>"
+		 	$.each(data.locations[5].Southside.halls['Valentine'], function(i, f) {
+		 	var listElement =  "<option>" + i + "</option>"
+		 	$(listElement).appendTo("#myList");
+			 });
+		});
+	});
+	
+	
+	$(function() {
+	
+		 $.getJSON('json/dorms.json', function(data) {
+		 	$.each(data.locations[5].Southside.halls['Valentine'][1], function(i, f) {
+		 	var listElement = "<li>" + i + "</li>"
 		 	$(listElement).appendTo(".Rooms ul");
-		 });
+			 });
+		});
 	});
 
 </script>
@@ -64,17 +81,11 @@ body {
 <div class="Viewer">Floor plan picture viewer goes here</div>
 
 
-<div class="Floor">Floor drop down goes here
+<div class="Floor">
 
 	<form>
-		Select your favorite browser:
-		<select id="myList" onchange="favBrowser()">
- 	 		<option></option>
-  			<option>Google Chrome</option>
-  			<option>Firefox</option>  
-  			<option>Internet Explorer</option>
-  			<option>Safari</option>
-  			<option>Opera</option>
+		Floor #
+		<select id="myList" onchange="updateRoom()">
 		</select>
 		<p>Your favorite browser is: <input type="text" id="favorite" size="20"></p>
 	</form>
