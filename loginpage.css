@@ -70,9 +70,7 @@ td{
 	margin-top: 5px;
 	padding-top: 0px !important;
 }
-#topRow{
-	margin-left: 30px;
-}
+
 #head{
 	margin-top: 5px !important;
 	margin-bottom: 25px !important;
@@ -86,7 +84,7 @@ td{
      height:100%;
      text-align:center;
      z-index: 1000;
-     background-image:url(http://wiki.foresightlinux.org/wiki/download/attachments/925/transparent.png);
+     background: rgba(255,255,255,.2);
 
 }
 
