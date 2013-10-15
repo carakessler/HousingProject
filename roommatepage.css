@@ -1,0 +1,76 @@
+/* 
+    Document   : roommatepage
+    Created on : Oct 15, 2013, 1:08:54 PM
+    Author     : Adam Cushmaro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    background-size: 100%;
+    background-image:url('rochesterlogo.png');
+    background-repeat: no-repeat;
+ }
+
+ h1{
+    font-family: sans-serif;
+    font-size: 28px !important;
+    font-weight: normal;
+    text-align:center;
+ }
+ 
+ table.tableshift{
+     float:right;
+     height: 300px;
+ }
+ 
+ [class*="span"] {  
+  float: left;  
+  min-height: 1px;  
+  margin-left: 20px;  
+} 
+
+.schedule[class*="span"] {  
+  float: right;  
+  min-height: 1px;
+  /*margin-left: 900px;*/  
+} 
+.students[class*="span"] {  
+  float: left;  
+  min-height: 1px;
+  margin-left: 700px;
+  
+} 
+.row:after {  
+  clear: both;  
+}
+ 
+
+.span12{ width: 1080px; }
+.span11 { width: 1000px; }
+.span10 { width: 920px; }
+.span9 { width: 840px; }
+.span8 { width: 760px; }
+.span7 { width: 680px; }
+.span6 { width: 600px; }
+.span5 { width: 520px; }
+.span4 { width: 440px; }
+.span3 { width: 360px; }
+.span2 { width: 280px; }
+.span1 { width: 200px; }
+ 
+
+td{
+     text-align: center;
+     color:blue;
+     background-color:yellow;
+     font-size: large;
+     font-family: sans-serif;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+ 
+ tr{
+     
+ }
+

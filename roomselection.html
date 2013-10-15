@@ -45,6 +45,11 @@
 		 	$(".Rooms ul").html(listElement);
 			 });
 		});
+		//var imager = "<img src=\"" + "Pictures/Floor Plans/FraternityQuad/DeltaKappaEpsilon1.png" + "\">"
+		var imager = "<img src=\"Pictures/Floor Plans/" + QueryString.a + "/" + QueryString.b + floorth + ".png\">"
+
+		$(".Viewer").html(imager);
+		//$(".Viewer").text(imager);
 	}
 	
 	
@@ -67,6 +72,11 @@
 		 	$(listElement).appendTo(".Rooms ul");
 			 });
 		});
+		
+		var imager = "<img src=\"Pictures/Floor Plans/" + QueryString.a + "/" + QueryString.b  + "1.png\">"
+
+		$(".Viewer").html(imager);
+		//$(".Viewer").text(imager);
 	});
 
 </script>
@@ -108,7 +118,18 @@ body {
 <div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Fraternity Quad<span class="caret"></span></button>
             <ul class="dropdown-menu">
+<<<<<<< HEAD
                 <li><a href="#">Psi Upsilon</a></li>
+=======
+                <li><a href="?a=FraternityQuad&b=AlphaDeltaPhi">Alpha Delta Phi</a></li>
+                <li><a href="?a=FraternityQuad&b=DeltaKappaEpsilon">Delta Kappa Epsilon</a></li>
+                <li><a href="?a=FraternityQuad&b=DouglassLeadershipHouse">Douglass Leadership House</a></li>
+                <li><a href="?a=FraternityQuad&b=PsiUpsilon">Psi Upsilon</a></li>
+                <li><a href="?a=FraternityQuad&b=SigmaAlphaMu">Sigma Alpha Mu</a></li>
+                <li><a href="?a=FraternityQuad&b=SigmaChi">Sigma Chi</a></li>
+                <li><a href="?a=FraternityQuad&b=SigmaPhiEpsilon">Sigma Phi Epsilon</a></li>
+                <li><a href="?a=FraternityQuad&b=ThetaChi">Theta Chi</a></li>
+>>>>>>> 1db805003c0cdf6825923578ef4811c61e2777ce
             </ul>
 	</div>
 	
@@ -130,16 +151,6 @@ body {
                 <li><a href="?a=JacksonCourt&b=Anderson">Anderson</a></li>
                 <li><a href="?a=JacksonCourt&b=Wilder">Wilder</a></li>
                 <li><a href="?a=JacksonCourt&b=O-Brien">O-Brien</a></li>
-            </ul>
-	</div>
-	<div class="btn-group">
-            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Riverview<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Building A</a></li>
-                <li><a href="#">Building B</a></li>
-                <li><a href="#">Building C</a></li>
-                <li><a href="#">Building D</a></li>
-                <li><a href="#">Building E</a></li>
             </ul>
 	</div>
 	<div class="btn-group">
