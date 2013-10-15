@@ -67,7 +67,7 @@
 	$(function() {
 	
 		 $.getJSON('json/dorms.json', function(data) {
-		 	$.each(data.locations[5].Southside.halls[QueryString.b][1], function(i, f) {
+		 	$.each(data.locations[QueryString.a].halls[QueryString.b][1], function(i, f) {
 		 	var listElement = "<li>" + i + "</li>"
 		 	$(listElement).appendTo(".Rooms ul");
 			 });
