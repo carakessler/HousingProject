@@ -13,6 +13,13 @@
  	box-shadow: 2px 2px 5px rgb(0,22,50);
 
  }
+ #buildingBackdrop{
+ 	background-color: #EFEFEF;
+ 	width: 650px;
+ 	border-radius: 5px; 
+ 	height: 490px;
+ 	box-shadow: 2px 2px 5px rgb(0,22,50);
+ }
  h1{
  	font-family: sans-serif;
 	font-size: 28px !important;
@@ -45,6 +52,74 @@
 	margin-bottom: 0px;
 	margin-right: 4px;
 }
- a {
+a {
     text-decoration: none !important;
+}
+img {
+	width: 150px;
+	height: 150px;
+}
+td{
+	height: 150px !important;
+	width: 170px !important;
+}
+.building{
+	width: 150px;
+	height: 23px;
+	margin-bottom: 10px !important;
+	margin-top: 5px;
+	padding-top: 0px !important;
+}
+#topRow{
+	margin-left: 30px;
+}
+#head{
+	margin-top: 5px !important;
+	margin-bottom: 25px !important;
+}
+.overlay {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     text-align:center;
+     z-index: 1000;
+     background-image:url(http://wiki.foresightlinux.org/wiki/download/attachments/925/transparent.png);
+
+}
+
+.ov  {
+   	width: 800px;
+	margin: 100px auto;
+	margin-top: 30px !important;
+	height: 500px;
+	background-color: #EFEFEF;
+	border: 1px solid gray;
+	padding: 15px;
+	text-align: center;
+	border-radius: 4px;
+}
+.overlay:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.close{
+	text-align: right;
+}
+.description{
+	font-size: 15px;
+	text-align: left;
+
+}
+#wildAnder{
+	float:left;
+	width:380px;
+	background:#9c9;
+
+}
+#oBrien{
+	float: right;
+	width: 380px;
 }
