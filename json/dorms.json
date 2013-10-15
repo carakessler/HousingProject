@@ -1,10 +1,10 @@
 {
-	"locations": [{
-		"Fraternity Quad": {
+	"locations": {
+		"FraternityQuad": {
 		
 				"halls": {
 					
-					"Alpha Delta Phi" : {
+					"AlphaDeltaPhi" : {
 							
 							"1": {
 									
@@ -52,7 +52,7 @@
 										
 					},
 					
-					"Delta Kappa Epsilon" : {
+					"DeltaKappaEpsilon" : {
 						
 							"1": {
 									
@@ -115,7 +115,7 @@
 					
 					},
 					
-					"Douglass Leadership House" : {
+					"DouglassLeadershipHouse" : {
 						
 							
 							"1": {
@@ -178,7 +178,7 @@
 					
 					},
 					
-					"Drama House" : {
+					"DramaHouse" : {
 							
 							"1": {
 									
@@ -240,7 +240,7 @@
 					
 					},
 					
-					"Psi Upsilon" : {
+					"PsiUpsilon" : {
 					
 							"1": {
 									
@@ -303,7 +303,7 @@
 					
 					},
 					
-					"Sigma Alpha Mu" : {
+					"SigmaAlphaMu" : {
 							
 							"1": {
 									
@@ -366,7 +366,7 @@
 					
 					},
 					
-					"Sigma Chi" :{
+					"SigmaChi" :{
 					
 							"1": {
 									
@@ -415,7 +415,7 @@
 					},
 					
 					
-					"Sigma Phi Epislon" : {
+					"SigmaPhiEpislon" : {
 					
 							"1": {
 									
@@ -464,7 +464,7 @@
 					},
 					
 					
-					"Theta Chi" : {
+					"ThetaChi" : {
 							
 							"1": {
 									
@@ -536,10 +536,8 @@
 				
 				
 							
-		}
 		},
-		{
-		"Hill Court" : {
+		"HillCourt" : {
 				"halls": {
 					
 					"Chambers" : {
@@ -816,10 +814,8 @@
 							}
 						}
 				}
-		}
 		},
-		{
-		"Jackson Court" : {
+		"JacksonCourt" : {
 			"halls": {
 					
 					"Anderson" : {
@@ -1237,20 +1233,16 @@
 							}
 					}
 				}
-		}
 		},
-		{		
-		"Res Quad" : {
+		"ResQuad" : {
 		
 		
 		
-		}
 		},
-		{
 		"Riverview" : {
 			"halls": {
 					
-					"Building A" : {
+					"A" : {
 							
 							"1": {
 									
@@ -1288,7 +1280,7 @@
 							}	
 					},
 					
-					"Building B" : {
+					"B" : {
 							
 							"1": {
 									
@@ -1326,7 +1318,7 @@
 							}	
 					},
 					
-					"Building C" : {
+					"C" : {
 							
 							"1": {
 									
@@ -1365,7 +1357,7 @@
 					},
 					
 					
-					"Building D" : {
+					"D" : {
 							
 							"1": {
 									
@@ -1396,7 +1388,7 @@
 							
 					},
 					
-				"Building E" : {
+				"E" : {
 							
 							"1": {
 									
@@ -1428,9 +1420,7 @@
 					}
 				}
 		
-		}
 		},
-		{
 		"Southside" : {
 			"halls": {
 					
@@ -1608,33 +1598,6 @@
 									"830" : "true",
 									"840" : "true"						
 							
-							},
-							
-							"9": {
-																	
-									"910" : "true",
-									"920" : "true",
-									"930" : "true",
-									"940" : "true"							
-							
-							},
-							
-							"10": {
-																	
-									"1010" : "true",
-									"1020" : "true",
-									"1030" : "true",
-									"1040" : "true"							
-							
-							},
-							
-							"11": {
-																	
-									"1110" : "true",
-									"1120" : "true",
-									"1130" : "true",
-									"1140" : "true"							
-							
 							}
 						},	
 						
@@ -1743,6 +1706,10 @@
 		}
 		
 		
+    },
+    	"SueBAnthony" : { 
+    	
+    	
+    	}
     }
-    	}]
 }

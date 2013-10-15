@@ -8,6 +8,29 @@
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script>
+
+	var QueryString = function () {
+  	// This function is anonymous, is executed immediately and 
+  	// the return value is assigned to QueryString!
+ 	 var query_string = {};
+  	var query = window.location.search.substring(1);
+ 	 var vars = query.split("&");
+ 	for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    	// If first entry with this name
+    if (typeof query_string[pair[0]] === "undefined") {
+      query_string[pair[0]] = pair[1];
+    	// If second entry with this name
+    } else if (typeof query_string[pair[0]] === "string") {
+      var arr = [ query_string[pair[0]], pair[1] ];
+      query_string[pair[0]] = arr;
+    	// If third or later entry with this name
+    } else {
+      query_string[pair[0]].push(pair[1]);
+    }
+ 	 } 
+    return query_string;
+	} ();
 	
 	function updateRoom()
 	{
@@ -16,7 +39,7 @@
 		$.getJSON('json/dorms.json', function(data) {
 			//var floorth = document.getElementById("myList");
 
-		 	$.each(data.locations[5].Southside.halls['Valentine'][floorth], function(i, f) {
+		 	$.each(data.locations[QueryString.a].halls[QueryString.b][floorth], function(i, f) {
 		 	listElement += "<li>" + i + "</li>"
 		 	//$(listElement).appendTo(".Rooms ul");
 		 	$(".Rooms ul").html(listElement);
@@ -28,7 +51,7 @@
 	$(function() {
 	
 		 $.getJSON('json/dorms.json', function(data) {
-		 	$.each(data.locations[5].Southside.halls['Valentine'], function(i, f) {
+		 	$.each(data.locations[QueryString.a].halls[QueryString.b], function(i, f) {
 		 	var listElement =  "<option>" + i + "</option>"
 		 	$(listElement).appendTo("#myList");
 			 });
@@ -39,7 +62,7 @@
 	$(function() {
 	
 		 $.getJSON('json/dorms.json', function(data) {
-		 	$.each(data.locations[5].Southside.halls['Valentine'][1], function(i, f) {
+		 	$.each(data.locations[5].Southside.halls[QueryString.b][1], function(i, f) {
 		 	var listElement = "<li>" + i + "</li>"
 		 	$(listElement).appendTo(".Rooms ul");
 			 });
@@ -85,73 +108,73 @@ body {
 <div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Fraternity Quad<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">Alpha Delta Phi</a></li>
-                <li><a href="#">Delta Kappa Epsilon</a></li>
-                <li><a href="#">Douglass Leadership House</a></li>
-                <li><a href="#">Psi Upsilon</a></li>
-                <li><a href="#">Sigma Alpha Mu</a></li>
-                <li><a href="#">Sigma Chi</a></li>
-                <li><a href="#">Sigma Phi Epsilon</a></li>
-                <li><a href="#">Theta Chi</a></li>
+                <li><a href="?a=FraternityQuad&b=AlphaDeltaPhi">Alpha Delta Phi</a></li>
+                <li><a href="?a=FraternityQuad&b=DeltaKappaEpsilon">Delta Kappa Epsilon</a></li>
+                <li><a href="?a=FraternityQuad&b=DouglassLeadershipHouse">Douglass Leadership House</a></li>
+                <li><a href="?a=FraternityQuad&b=PsiUpsilon">Psi Upsilon</a></li>
+                <li><a href="?a=FraternityQuad&b=SigmaAlphaMu">Sigma Alpha Mu</a></li>
+                <li><a href="?a=FraternityQuad&b=SigmaChi">Sigma Chi</a></li>
+                <li><a href="?a=FraternityQuad&b=SigmaPhiEpsilon">Sigma Phi Epsilon</a></li>
+                <li><a href="?a=FraternityQuad&b=ThetaChi">Theta Chi</a></li>
             </ul>
 	</div>
 	
 	<div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Hill Court<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">Chambers</a></li>
-                <li><a href="#">Fairchild</a></li>
-                <li><a href="#">Gale</a></li>
-                <li><a href="#">Kendrick</a></li>
-                <li><a href="#">Munro</a></li>
-                <li><a href="#">Slater</a></li>
+                <li><a href="?a=HillCourt&b=Chambers">Chambers</a></li>
+                <li><a href="?a=HillCourt&b=Fairchild">Fairchild</a></li>
+                <li><a href="?a=HillCourt&b=Gale">Gale</a></li>
+                <li><a href="?a=HillCourt&b=Kendrick">Kendrick</a></li>
+                <li><a href="?a=HillCourt&b=Munro">Munro</a></li>
+                <li><a href="?a=HillCourt&b=Slater">Slater</a></li>
             </ul>
 	</div>
 	
 	<div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Jackson Court<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">Anderson</a></li>
-                <li><a href="#">Wilder</a></li>
-                <li><a href="#">O-Brien</a></li>
+                <li><a href="?a=JacksonCourt&b=Anderson">Anderson</a></li>
+                <li><a href="?a=JacksonCourt&b=Wilder">Wilder</a></li>
+                <li><a href="?a=JacksonCourt&b=O-Brien">O-Brien</a></li>
             </ul>
 	</div>
 	<div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Res Quad<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">Burton</a></li>
-                <li><a href="#">Crosby</a></li>
-                <li><a href="#">Gilbert</a></li>
-                <li><a href="#">Hoeing</a></li>
-                <li><a href="#">Lovejoy</a></li>
-                <li><a href="#">Tiernan</a></li>
+                <li><a href="?a=ResQuad&b=Burton">Burton</a></li>
+                <li><a href="?a=ResQuad&b=Crosby">Crosby</a></li>
+                <li><a href="?a=ResQuad&b=Gilbert">Gilbert</a></li>
+                <li><a href="?a=ResQuad&b=Hoeing">Hoeing</a></li>
+                <li><a href="?a=ResQuad&b=Lovejoy">Lovejoy</a></li>
+                <li><a href="?a=ResQuad&b=Tiernan">Tiernan</a></li>
             </ul>
 	</div>
 	
 	<div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Riverview<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">Building A</a></li>
-                <li><a href="#">Building B</a></li>
-                <li><a href="#">Building C</a></li>
-                <li><a href="#">Building D</a></li>
-                <li><a href="#">Building E</a></li>
+                <li><a href="?a=Riverview&b=A">Building A</a></li>
+                <li><a href="?a=Riverview&b=B">Building B</a></li>
+                <li><a href="?a=Riverview&b=C">Building C</a></li>
+                <li><a href="?a=Riverview&b=D">Building D</a></li>
+                <li><a href="?a=Riverview&b=E">Building E</a></li>
             </ul>
 	</div>
 	
 	<div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Southside<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">deKiewiet</a></li>
-                <li><a href="#">Maisonettes</a></li>
-                <li><a href="#">Valentine</a></li>
+                <li><a href="?a=Southside&b=deKiewiet">deKiewiet</a></li>
+                <li><a href="?a=Southside&b=Maisonettes">Maisonettes</a></li>
+                <li><a href="?a=Southside&b=Valentine">Valentine</a></li>
             </ul>
 	</div>
 	
 	<div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Susan B Anthony<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="#">Sue B Anthony</a></li>
+                <li><a href="?a=SusanBAnthony&b=SusanBAnthony">Susan B Anthony</a></li>
             </ul>
 	</div>
 </div>
