@@ -1,0 +1,16 @@
+.Viewer {
+	background-color: white;
+	float: left;
+	height: 550px;
+	width: 100%;
+}
+td {
+	padding-left: 165px;
+}
+img {
+	width: 150px;
+	height: 150px;
+}
+.building{
+	width: 150px;
+}
