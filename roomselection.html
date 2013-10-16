@@ -41,7 +41,10 @@
 			//var floorth = document.getElementById("myList");
 
 		 	$.each(data.locations[QueryString.a].halls[QueryString.b][floorth], function(i, f) {
-		 	listElement += "<li>" + i + "</li>"
+		 	if(f == "true")
+		 		listElement += "<li><a href=\"buildingselection.html\" class=\"popup\">" + i + "</a></li>"
+		 	else
+		 		listElement += "<li><FONT COLOR=\"#FF0000\">" + i + "</FONT></li>"
 		 	//$(listElement).appendTo(".Rooms ul");
 		 	$(".Rooms ul").html(listElement);
 			 });
@@ -66,11 +69,17 @@
 	
 	
 	$(function() {
-	
+		 var listElement = ""
+
 		 $.getJSON('json/dorms.json', function(data) {
 		 	$.each(data.locations[QueryString.a].halls[QueryString.b][1], function(i, f) {
-		 	var listElement = "<li>" + i + "</li>"
-		 	$(listElement).appendTo(".Rooms ul");
+		 	//var listElement = "<li>" + i + "</li>"
+		 		if(f == "true")
+		 			listElement = "<li><a href=\"buildingselection.html\" class=\"popup\">" + i + "</a></li>"
+		 		else
+		 			listElement = "<li><FONT COLOR=\"#FF0000\">" + i + "</FONT></li>"
+				$(listElement).appendTo(".Rooms ul");
+			
 			 });
 		});
 		
