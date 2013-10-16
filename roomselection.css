@@ -20,7 +20,7 @@ body {
 }
 .Floor {
 	position: relative;
-	top: -10px;
+	top: -30px;
 	background-color: #333385;
 	float: right;
 	width: 32%;
@@ -34,10 +34,12 @@ body {
 	
 }
 .Rooms {
+	position: relative;
+	top: -26px;
 	background-color: #333385;
 	float: right;
 	width: 32%;
-	height: 475px;
+	height: 439px;
 	border-style: solid;
 	border-color: #E6E6F0;
 	border-radius: 30px;
@@ -67,17 +69,25 @@ body {
 	margin-top: -100px;
 	padding-left: 10px;
 	margin-left: 10px;
-	padding-right: 440px;
+	padding-right: 380px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
+	font-weight: bold;
 	
 }
 
 #roomNumber{
-	background-color: #9999C2;
+	position:relative;
+	top: -25px;
+	background-color: #000066;
 	color: #E6E6F0;	
-	text-align: center;
-	padding-left: 200px;
-	padding-right: 150px;
+	margin-top: -100px;
+	padding-left: 10px;
+	margin-left: 10px;
+	padding-right: 380px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	font-weight: bold;
 }
