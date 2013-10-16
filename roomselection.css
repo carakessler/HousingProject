@@ -1,27 +1,73 @@
 body {
-	background-color: red;
+	background-color: #E6E6F0;
 }
 .Navbar {
-	background-color: white;
-	margin-top: 50px;
-	height: 75px;
+	background-color: #E6E6F0;
+	margin-top: 60px;
+	padding: 0px;
+	padding-left: 10px;
 }
 .Viewer {
-	background-color: blue;
+	background-color: #333385;
 	float: left;
 	width: 68%;
 	height: 550px;
+	border-style: solid;
+	border-color: #E6E6F0;
+	border-radius: 30px;
+	border-width: 10px;
+	color:white
 }
 .Floor {
-	background-color: yellow;
+	background-color: #333385;
 	float: right;
 	width: 32%;
 	height: 75px;
+	border-style: solid;
+	border-color: #E6E6F0;
+	border-radius: 30px;
+	border-width: 10px;
+	color: white
 }
 .Rooms {
-	background-color: green;
+	background-color: #333385;
 	float: right;
 	width: 32%;
 	height: 475px;
+	border-style: solid;
+	border-color: #E6E6F0;
+	border-radius: 30px;
+	border-width: 10px;
+	color: white;
 }
 
+
+#floorPlan {
+	background-color: #000066;
+	color: #E6E6F0;	
+	text-align: center;
+	padding-left: 10px;
+	padding-right:975px; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 10px;
+	font-weight: bold;	
+	border-radius: 10px;
+}
+
+#floor{
+	background-color: #9999C2;
+	color: #E6E6F0;	
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 150px;
+}
+
+#roomNumber{
+	background-color: #9999C2;
+	color: #E6E6F0;	
+	text-align: center;
+	padding-left: 200px;
+	padding-right: 150px;
+}
