@@ -8,6 +8,8 @@ body {
 	padding-left: 10px;
 }
 .Viewer {
+	position: relative;
+	top: -11px;
 	background-color: #333385;
 	float: left;
 	width: 68%;
@@ -20,7 +22,7 @@ body {
 }
 .Floor {
 	position: relative;
-	top: -30px;
+	top: -41px;
 	background-color: #333385;
 	float: right;
 	width: 32%;
@@ -35,7 +37,7 @@ body {
 }
 .Rooms {
 	position: relative;
-	top: -26px;
+	top: -37px;
 	background-color: #333385;
 	float: right;
 	width: 32%;
@@ -49,6 +51,8 @@ body {
 
 
 #floorPlan {
+	position: relative;
+	top: -11px;
 	background-color: #000066;
 	color: #E6E6F0;	
 	padding-left: 10px;
@@ -63,7 +67,7 @@ body {
 
 #floor{
 	position:relative;
-	top: -30px;
+	top: -41px;
 	background-color: #000066;
 	color: #E6E6F0;	
 	margin-top: -100px;
@@ -79,7 +83,7 @@ body {
 
 #roomNumber{
 	position:relative;
-	top: -25px;
+	top: -36px;
 	background-color: #000066;
 	color: #E6E6F0;	
 	margin-top: -100px;
