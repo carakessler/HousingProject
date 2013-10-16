@@ -109,3 +109,8 @@ a{
 	border-radius: 10px;
 	font-weight: bold;
 }
+
+
+img {
+    max-width: 100%;
+}
