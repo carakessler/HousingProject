@@ -19,6 +19,8 @@ body {
 	color:white
 }
 .Floor {
+	position: relative;
+	top: -10px;
 	background-color: #333385;
 	float: right;
 	width: 32%;
@@ -27,7 +29,9 @@ body {
 	border-color: #E6E6F0;
 	border-radius: 30px;
 	border-width: 10px;
-	color: white
+	color: white;
+	text-align:center;
+	
 }
 .Rooms {
 	background-color: #333385;
@@ -45,7 +49,6 @@ body {
 #floorPlan {
 	background-color: #000066;
 	color: #E6E6F0;	
-	text-align: center;
 	padding-left: 10px;
 	padding-right:975px; 
 	padding-top: 10px;
@@ -57,11 +60,18 @@ body {
 }
 
 #floor{
-	background-color: #9999C2;
+	position:relative;
+	top: -30px;
+	background-color: #000066;
 	color: #E6E6F0;	
-	text-align: center;
-	padding-left: 200px;
-	padding-right: 150px;
+	margin-top: -100px;
+	padding-left: 10px;
+	margin-left: 10px;
+	padding-right: 440px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	
 }
 
 #roomNumber{
