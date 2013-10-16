@@ -10,54 +10,64 @@ and open the template in the editor.
         <link href="roommatepage.css" type="text/css" rel="stylesheet" />
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     </head>
-    <body>
-        <div class="row">
-            <div class="span12">
-            <h1>Day 1: 6 Person Suites</h1>
-            </div>
+    
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
         
-            <div class="row">
-                <div class="span4 students" id="formbackground">
-                       <form>
-                            <div class ="form-group form-inline">
-                                <label for="student1" style="color:white">Student Name #1:</label>
-                                <input type = "text" class ="form-control input-sm" required placeholder ="Student Name" style="width:150px;">
-                                <input type ="text" class="form-control input-sm" required placeholder ="Student ID Number" style="width:150px;">
-                            </div>
-                            <div class ="form-group form-inline">
-                                <label for="student4" style="color:white">Student Name #2:</label>
-                                <input type = "text" class="form-control input-sm" required placeholder ="Student Name" style="width:150px;">
-                                <input type ="text" class="form-control input-sm" required placeholder ="Student ID Number" style="width:150px;">
-                            </div>
-                            <div class ="form-group form-inline">
-                                <label for="student3" style="color:white">Student Name #3:</label>
-                                <input type = "text" class="form-control input-sm" required placeholder ="Student Name" style="width:150px;">
-                                <input type ="text" class="form-control input-sm" required placeholder ="Student ID Number" style="width:150px;">
-                            </div>
-                            <div class ="form-group form-inline">
-                                <label for="student4" style="color:white">Student Name #4:</label>
-                                <input type = "text" class="form-control input-sm" required placeholder ="Student Name" style="width:150px;">
-                                <input type ="text" class="form-control input-sm" required placeholder ="Student ID Number" style="width:150px;">
-                            </div>
-                            <div class ="form-group form-inline">
-                                <label for="student5" style="color:white">Student Name #5:</label>
-                                <input type = "text" class="form-control input-sm" required placeholder ="Student Name" style="width:150px;">
-                                <input type ="text" class="form-control input-sm" required placeholder ="Student ID Number" style="width:150px;">
-                            </div>
-                            <div class ="form-group form-inline">
-                                <label for="student6" style="color:white">Student Name #6</label>
-                                <input type = "text" class="form-control input-sm" required placeholder ="Student Name" style="width:150px;">
-                                <input type ="text" class="form-control input-sm" required placeholder ="Student ID Number" style="width:150px;">
-                            </div>
-                           <button type="submit" class="btn btn-default" style="text-align: center">Submit</button>
-                      </form>
-                </div>
+    <div class="jumbotron">    
+    <div class="container">
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Please Submit Suite Members</h2>
+            <div class="form-group form-inline">
+                <input type="text" class="form-control" placeholder="Student Name" autofocus>
+                <input type="text" class="form-control" placeholder="ID Number">
+            </div>
+            <div class="form-group form-inline">
+                <input type="text" class="form-control" placeholder="Student Name" autofocus>
+                <input type="text" class="form-control" placeholder="ID Number">
+            </div>
+            <div class="form-group form-inline">
+                <input type="text" class="form-control" placeholder="Student Name" autofocus>
+                <input type="text" class="form-control" placeholder="ID Number">
+            </div>
+            <div class="form-group form-inline">
+                <input type="text" class="form-control" placeholder="Student Name" autofocus>
+                <input type="text" class="form-control" placeholder="ID Number">
+            </div>
+            <div class="form-group form-inline">
+                <input type="text" class="form-control" placeholder="Student Name" autofocus>
+                <input type="text" class="form-control" placeholder="ID Number">
+            </div>
+            <div class="form-group form-inline">
+                <input type="text" class="form-control" placeholder="Student Name" autofocus>
+                <input type="text" class="form-control" placeholder="ID Number">
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+        </div> 
+        </div>
                 <div class ="span4 schedule">
                     <table class="table-bordered">
                         <tr>
-                            <td>Day</td>
-                            <td>Room Size</td>
+                            <td class="first">Day</td>
+                            <td class="first">Room Size</td>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -82,5 +92,6 @@ and open the template in the editor.
                     </table>
                 </div>
             </div>
+        </div>
     </body>
 </html>
