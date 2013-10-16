@@ -15,6 +15,7 @@
  }
  #buildingBackdrop{
  	background-color: #EFEFEF;
+	margin-top: 35px;
  	width: 650px;
  	border-radius: 5px; 
  	height: 490px;
