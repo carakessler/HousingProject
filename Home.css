@@ -30,9 +30,16 @@ p{
 	border-style: solid;
 	border-radius: 10px;
 	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-bottom: 2%;
 }
 
 #head{
 	font-weight: bold;
 }
+
+#signature{
+	font-size: 16pt;
+	text-align: right;
+	font-family: Brush Script MT, cursive;
+}
+
