@@ -70,7 +70,10 @@ and open the template in the editor.
                 <input type="text" class="form-control" placeholder="Student Name" autofocus>
                 <input type="text" class="form-control" placeholder="ID Number">
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit"><a href='Home.html'>Submit</a></button>
+           
+
+
         </form>
          
         </div>
@@ -110,32 +113,31 @@ and open the template in the editor.
     
    $.get('people.txt',function(data){
     var perLine=data.split('\n');
-    myVars =[];
-    var lotterynum = 0;
-    
+    var lotterynum=0;
+    var idnum = 0;
     for(i=0;i<perLine.length;i++)
     {
-        var line = perLine[i].split(' ');
-        var idnum = 0;
-        myVars[i]={
-        'firstname':line[0],
-        'lastname':line[1],
-        'id':line[2],
-        'year':line[3]
-        };
-        if(myVars[0].year == "So"){
+        
+        var line = String(perLine[i].split('\t'));
+        
+        if(line[3] == "So"){
             idnum = 1;
+            lotterynum = lotterynum + idnum;
+            
         }
-        else if(myVars[0].year == "Jr"){
+        else if(line[3] == "Jr"){
             idnum = 2;
+            lotterynum = lotterynum + idnum;
+            
         }
-        else if(myVars[0].year == "Sr"){
+        else if(line[3] == "Sr"){
             idnum = 3;
+            lotterynum = lotterynum + idnum;
+           
         }
-        lotterynum = lotterynum + idnum;
-        console.log("loop");
+        
+       
     }
-    console.log(lotterynum);
     
  });
      

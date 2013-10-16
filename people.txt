@@ -1,7 +1,6 @@
-Cara Kessler 27567104 Jr
-Sam Johnson 22567104 Sr
-John Smith 25567104 Sr
-Mary Jones 24567104 Jr
-Keith Wilson 27667104 So
-James Thompson 27564104 Sr
-                                    
+Cara	Kessler	27567104	Jr
+Sam	Johnson	22567104	Sr
+John	Smith	25567104	Sr
+Mary	Jones	24567104	Jr
+Keith	Wilson	27667104	So
+James	Thompson	27564104	Sr
