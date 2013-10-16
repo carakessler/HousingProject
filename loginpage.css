@@ -15,6 +15,7 @@
  }
  #buildingBackdrop{
  	background-color: #EFEFEF;
+	margin-top: 35px;
  	width: 650px;
  	border-radius: 5px; 
  	height: 490px;
@@ -70,9 +71,7 @@ td{
 	margin-top: 5px;
 	padding-top: 0px !important;
 }
-#topRow{
-	margin-left: 30px;
-}
+
 #head{
 	margin-top: 5px !important;
 	margin-bottom: 25px !important;
@@ -86,20 +85,25 @@ td{
      height:100%;
      text-align:center;
      z-index: 1000;
-     background-image:url(http://wiki.foresightlinux.org/wiki/download/attachments/925/transparent.png);
+     background: rgba(255,255,255,.3);
 
 }
 
 .ov  {
-   	width: 800px;
+   	width: 500px;
 	margin: 100px auto;
-	margin-top: 30px !important;
-	height: 500px;
-	background-color: #EFEFEF;
+	margin-top: 50px !important;
+	height: 450px;
+	background-color: #EBEBEB;
 	border: 1px solid gray;
-	padding: 15px;
-	text-align: center;
+	padding: 25px;
+ 	box-shadow: 2px 2px 3px rgb(0,22,50);
+	text-align: left;
 	border-radius: 4px;
+}
+.ovSmall{
+	height: 350px !important;
+	margin-top: 110px !important;
 }
 .overlay:target {
 	opacity:1;
@@ -113,13 +117,7 @@ td{
 	text-align: left;
 
 }
-#wildAnder{
-	float:left;
-	width:380px;
-	background:#9c9;
-
-}
-#oBrien{
-	float: right;
-	width: 380px;
+h2{
+	margin-top: 0px !important;
+	margin-bottom: 30px !important;
 }

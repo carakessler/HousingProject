@@ -1,16 +1,48 @@
-.Viewer {
-	background-color: white;
-	float: left;
-	height: 550px;
-	width: 100%;
+.viewer {
+ 	background-color: #EFEFEF;
+	margin-top: 75px;
+ 	width: 650px;
+ 	border-radius: 5px; 
+ 	height: 490px;
+ 	box-shadow: 2px 2px 5px rgb(0,22,50);
 }
-td {
-	padding-left: 165px;
+body{
+	background-size: 100%;
+ 	background-image:url('rochesterlogo.png');
+ 	background-repeat: no-repeat;
+
 }
+
 img {
 	width: 150px;
 	height: 150px;
 }
+
+td{
+	height: 150px !important;
+	width: 170px !important;
+}
 .building{
 	width: 150px;
+	height: 23px;
+	margin-bottom: 10px !important;
+	margin-top: 5px;
+	padding-top: 0px !important;
+}
+#topRow{
+	margin-left: 30px;
+}
+ h1{
+ 	font-family: sans-serif;
+	font-size: 28px !important;
+	font-weight: normal;
+	padding-top: 25px !important;
+	margin-bottom: 25px !important;
+
+ }
+tbody{
+ vertical-align: middle;
+}
+h2{
+	margin-top: 0px !important;
 }

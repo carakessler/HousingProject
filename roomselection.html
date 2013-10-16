@@ -4,6 +4,7 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="roomselection.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -40,7 +41,10 @@
 			//var floorth = document.getElementById("myList");
 
 		 	$.each(data.locations[QueryString.a].halls[QueryString.b][floorth], function(i, f) {
-		 	listElement += "<li>" + i + "</li>"
+		 	if(f == "true")
+		 		listElement += "<li><a href=\"buildingselection.html\" class=\"confirm\">" + i + "</a></li>"
+		 	else
+		 		listElement += "<li><FONT COLOR=\"#FF0000\">" + i + "</FONT></li>"
 		 	//$(listElement).appendTo(".Rooms ul");
 		 	$(".Rooms ul").html(listElement);
 			 });
@@ -65,11 +69,17 @@
 	
 	
 	$(function() {
-	
+		 var listElement = ""
+
 		 $.getJSON('json/dorms.json', function(data) {
-		 	$.each(data.locations[5].Southside.halls[QueryString.b][1], function(i, f) {
-		 	var listElement = "<li>" + i + "</li>"
-		 	$(listElement).appendTo(".Rooms ul");
+		 	$.each(data.locations[QueryString.a].halls[QueryString.b][1], function(i, f) {
+		 	//var listElement = "<li>" + i + "</li>"
+		 		if(f == "true")
+		 			listElement = "<li><a href=\"javascript:AlertIt()\" class=\"confirm\">" + i + "</a></li>"
+		 		else
+		 			listElement = "<li><FONT COLOR=\"#FF0000\">" + i + "</FONT></li>"
+				$(listElement).appendTo(".Rooms ul");
+			
 			 });
 		});
 		
@@ -78,54 +88,47 @@
 		$(".Viewer").html(imager);
 		//$(".Viewer").text(imager);
 	});
+	
+	function AlertIt() {
+		if(confirm("Are you SURE....?")){
+       		window.location="confirmation.html";
+   		 } else {
+       		 event.preventDefault();
+       		 return false;
+   		 }
+	}
 
 </script>
-
-
-<style type="text/css">
-body {
-	background-color: red;
-}
-.Navbar {
-	background-color: white;
-	margin-top: 50px;
-	height: 75px;
-}
-.Viewer {
-	background-color: blue;
-	float: left;
-	width: 68%;
-	height: 550px;
-}
-.Floor {
-	background-color: yellow;
-	float: right;
-	width: 32%;
-	height: 75px;
-}
-.Rooms {
-	background-color: green;
-	float: right;
-	width: 32%;
-	height: 475px;
-}
-
-</style>
 </head>
 
 <body>
+
+
 <div class="Navbar">
+
+<div class="navbarer navbar-inverse navbar-fixed-top">
+    	<div class="navbar-inner">
+        	 <ul class="nav navbar-nav">
+      			<li><a href="Home.html">Home</a></li>
+      			<li><a href="roommatepage.html">Group Registration</a></li>
+                <li><a href="buildingselection.html">Pick Rooms</a></li>
+                <li><a href="aboutbuildings.html">Housing Info</a></li>
+                <li><a href="support.html">Support</a></li>
+    		</ul>
+        </div>
+    </div>
+    
 <div class="btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Fraternity Quad<span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="?a=FraternityQuad&b=AlphaDeltaPhi">Alpha Delta Phi</a></li>
-                <li><a href="?a=FraternityQuad&b=DeltaKappaEpsilon">Delta Kappa Epsilon</a></li>
-                <li><a href="?a=FraternityQuad&b=DouglassLeadershipHouse">Douglass Leadership House</a></li>
+                <!-- <li><a href="?a=FraternityQuad&b=AlphaDeltaPhi">Alpha Delta Phi</a></li> -->
+                <!-- <li><a href="?a=FraternityQuad&b=DeltaKappaEpsilon">Delta Kappa Epsilon</a></li>  -->
+                <!-- <li><a href="?a=FraternityQuad&b=DouglassLeadershipHouse">Douglass Leadership House</a></li> -->
                 <li><a href="?a=FraternityQuad&b=PsiUpsilon">Psi Upsilon</a></li>
-                <li><a href="?a=FraternityQuad&b=SigmaAlphaMu">Sigma Alpha Mu</a></li>
-                <li><a href="?a=FraternityQuad&b=SigmaChi">Sigma Chi</a></li>
-                <li><a href="?a=FraternityQuad&b=SigmaPhiEpsilon">Sigma Phi Epsilon</a></li>
-                <li><a href="?a=FraternityQuad&b=ThetaChi">Theta Chi</a></li>
+                <!-- <li><a href="?a=FraternityQuad&b=SigmaAlphaMu">Sigma Alpha Mu</a></li>  -->
+                <!-- <li><a href="?a=FraternityQuad&b=SigmaChi">Sigma Chi</a></li>  -->
+                <!-- <li><a href="?a=FraternityQuad&b=SigmaPhiEpsilon">Sigma Phi Epsilon</a></li>  -->
+                <!-- <li><a href="?a=FraternityQuad&b=ThetaChi">Theta Chi</a></li> -->
             </ul>
 	</div>
 	
@@ -181,34 +184,41 @@ body {
             </ul>
 	</div>
 	
-	<div class="btn-group">
-            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Susan B Anthony<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="?a=SusanBAnthony&b=SusanBAnthony">Susan B Anthony</a></li>
-            </ul>
-	</div>
 </div>
 
-<div class="Viewer">Floor plan picture viewer goes here</div>
 
+<p>
+		<span id="floorPlan">Floor plan </span>
+		
+		<div class="Viewer">
+			
+		</div>
+</p>
 
+<p>
+<span id="floor">Floor Number</span>
 <div class="Floor">
-
+	<p>
 	<form>
-		Floor #
 		<select id="myList" onchange="updateRoom()">
 		</select>
 	</form>
+	</p>
+	</div>
+</p>
 
 
-</div>
 
+
+<p>
+<span id="roomNumber"> Room numbers </span>
 <div class="Rooms"> 
+	<br/>
 	<ul>
-		
-	
 	</ul>
 </div>
+</p>
+
 	
 </body>
 </html>
