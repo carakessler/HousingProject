@@ -47,6 +47,9 @@ body {
 	border-color: #E6E6F0;
 	border-radius: 30px;
 	border-width: 10px;
+}
+
+a{
 	color: white;
 }
 
@@ -64,6 +67,16 @@ body {
 	padding-top: 10px;
 	font-weight: bold;	
 	border-radius: 10px;
+}
+
+#floorPlanImage{
+	display: block;
+	position: relative; 
+	visibility: visible; 
+	width: 601px; 
+	height: 464px; 
+	top: 0px; 
+	left: 0px;
 }
 
 #floor{
@@ -90,7 +103,7 @@ body {
 	margin-top: -100px;
 	padding-left: 10px;
 	margin-left: 10px;
-	padding-right: 380px;
+	padding-right: 370px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
