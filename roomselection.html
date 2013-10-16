@@ -42,7 +42,7 @@
 
 		 	$.each(data.locations[QueryString.a].halls[QueryString.b][floorth], function(i, f) {
 		 	if(f == "true")
-		 		listElement += "<li><a href=\"buildingselection.html\" class=\"popup\">" + i + "</a></li>"
+		 		listElement += "<li><a href=\"buildingselection.html\" class=\"confirm\">" + i + "</a></li>"
 		 	else
 		 		listElement += "<li><FONT COLOR=\"#FF0000\">" + i + "</FONT></li>"
 		 	//$(listElement).appendTo(".Rooms ul");
@@ -75,7 +75,7 @@
 		 	$.each(data.locations[QueryString.a].halls[QueryString.b][1], function(i, f) {
 		 	//var listElement = "<li>" + i + "</li>"
 		 		if(f == "true")
-		 			listElement = "<li><a href=\"buildingselection.html\" class=\"popup\">" + i + "</a></li>"
+		 			listElement = "<li><a href=\"javascript:AlertIt()\" class=\"confirm\">" + i + "</a></li>"
 		 		else
 		 			listElement = "<li><FONT COLOR=\"#FF0000\">" + i + "</FONT></li>"
 				$(listElement).appendTo(".Rooms ul");
@@ -88,6 +88,15 @@
 		$(".Viewer").html(imager);
 		//$(".Viewer").text(imager);
 	});
+	
+	function AlertIt() {
+		if(confirm("Are you SURE....?")){
+       		window.location="confirmation.html";
+   		 } else {
+       		 event.preventDefault();
+       		 return false;
+   		 }
+	}
 
 </script>
 </head>
@@ -204,6 +213,7 @@
 <p>
 <span id="roomNumber"> Room numbers </span>
 <div class="Rooms"> 
+	<br/>
 	<ul>
 	</ul>
 </div>
