@@ -1,4 +1,5 @@
-##Housing Project
+#Housing Project
+
 Many people believe that the current housing system at the University of Rochester is unfair.  Using the feedback our group obtained from the first project, we came up with a new housing system that we thought would be more fair to students at the university.  
 
 
@@ -12,3 +13,14 @@ Our housing system uses the old seniority system, where each class of students a
 - **Day 4:** Drawing for 4 person cluster doubles in O'Brien and the Residential Quad <br />
 - **Day 5:** Drawing for doubles in all upperclassman double locations <br />
 - **Day 6:** Drawing for all 3 person and 2 person suites in Southside <br />
+
+##What our website can do
+The website's primary function is a simulation of our proposed housing system.  Though not all functionality is complete, we inculuded features that will allow the user to simulate our housing process.  The user can register a group within the system, and then register that group into a specific room on campus. All buildings are complete with all levels, rooms, and floor plans.  Furthermore, the user can learn more information about the buildings on the info page, and find more support on the support page.  
+
+##Authors
+**Adam Cushmaro** <br />
+**Cara Kessler** <br /> 
+**Rikesh Thapa** <br /> 
+**Alex Wilson** <br />
+**Christopher Wong** <br />
+**Ru Zhao** <br />
